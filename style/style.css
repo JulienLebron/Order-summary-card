@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../images/pattern-background-mobile.svg) no-repeat center/cover;
+}
+
+.card-container {
+    width: 375px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+
+.card-header {
+    height: 200px;
+    background: url(../images/illustration-hero.svg) no-repeat center/cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+h1 {
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    color: var(--desaturated-blue);
+    padding: 10px 30px;
+    line-height: 1.8em;
+}
+
+.annual-plan {
+    display: flex;
+    justify-content: space-around;
+    background: var(--very-pale-blue);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.annual-plan img {
+    width: 70px;;
+}
+
+.annual-plan h2 {
+    line-height: 1.5em;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.annual-plan h2 span {
+    color: var(--desaturated-blue);
+    font-weight: 600;
+}
+
+.annual-plan a {
+    color: var(--bright-blue);
+    font-weight: 900;
+    padding-top: 27px;
+    padding-left: 30px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+button {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.blue-button {
+    background: var(--bright-blue);
+    color: #fff;
+    box-shadow: 5px 0 10px 10px black;
+    box-shadow: 0px 20px 25px 10px rgba(130, 146, 173, 0.154);
+}
+
+button:hover {
+    background: darkorchid;
+    color: #fff;
+}
+
+.white-button {
+    background: #fff;
+    color: var(--desaturated-blue);
+}
+
+@media screen and (min-width: 1440px) {
+    
+    body {
+        background: url(../images/pattern-background-desktop.svg) no-repeat top/contain;
+    }
+
+    .card-container {
+        width: 450px;
+        box-shadow: 0px 20px 25px 10px rgba(130, 146, 173, 0.154);
+    }
+}
